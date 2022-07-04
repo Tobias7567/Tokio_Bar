@@ -1,0 +1,296 @@
+*   {
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0%;
+}
+element.style  {
+padding: 0px;
+}
+body{
+    padding-right: 0px !important;
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, 
+    rgba(136, 76, 7, 0.616), rgba(134, 68, 7, 0.616)),url(/public/fondo_body.jpg);
+}
+.Container_inicio   {
+    display: flex;
+    flex-direction: column;
+     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     background: #0f2027; /* fallback for old browsers */
+     background: -webkit-linear-gradient(to bottom, #2c5364, #203a43, #0f2027);
+     background: linear-gradient(
+         to bottom,
+         rgba(44, 83, 100, 0.400),
+         rgba(32, 58, 67, 0.400),
+         rgba(16, 33, 40, 0.400)
+       ),
+       url(/public/Fondo_2.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat; 
+}
+.Container_inicio h1    {
+    font-size: 5em;
+    margin-left: 1.2em ;
+
+    opacity: 0.9;
+    animation: fadeInDown;
+    animation-duration: 2s;
+    letter-spacing: 10px;
+    color: white;
+    font-family: 'Lora', serif;
+    
+}
+.Container_inicio h2{
+    color:white;
+    font-size: 2.8em;
+    margin-left: 2em ;
+    margin-top: 1em;
+    font-family: 'Gulzar', serif;
+    animation: fadeInDown;
+    animation-duration: 2s;
+}
+.arrow   {
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    margin-top: 10em;
+    color: black;
+    text-decoration: none;
+    animation: backInUp;
+    animation-duration: 2s;
+}
+.arrow img  {
+    width: 60px;
+    height: 60px;
+    animation: pulse;
+    animation-duration: 1s;
+       animation-iteration-count: infinite;
+}
+.arrow_footer   {
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    margin-top: 2em;
+    color: black;
+    text-decoration: none;
+}
+.arrow_footer img  {
+    width: 60px;
+    height: 60px;
+    animation: pulse;
+    animation-duration: 1s;
+       animation-iteration-count: infinite;
+}
+
+a :hover    {
+    color: black;
+}
+#Container_nav {
+    display:inline-flex;
+    flex-direction: row;
+    justify-content: right;
+
+width: 100%;
+margin-bottom: 0.3em ;
+margin-right: 3em;
+
+}
+.nav_link   {
+    font-size: 1.2em;
+    margin: 0em  0em  1.2em  1.2em;
+    color: white !important;
+    text-decoration: none;
+    font-family:'Times New Roman', Times, serif ;
+    letter-spacing: 1px;
+    animation: backInRight;
+    animation-duration: 2s;
+}
+.nav_link a  {
+    text-decoration: none;
+}
+.nav_link:hover    {
+    text-decoration: underline;
+}
+.title1 {
+    display: flex;
+    font-size: 2.5em;
+    margin-top: 2.5%;
+    justify-content: center;
+    letter-spacing: 5px;
+    font-family:'Times New Roman', Times, serif;
+}
+.Container_itemlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: row;
+}
+.container_card  {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 550px;
+  
+    margin: 3%;
+    justify-content: center;
+    align-items: center;
+    background: #c31432;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, 
+rgba(113, 36, 46, 0.507), rgba(112, 31, 31, 0.507)),url(/public/Fondo_1.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    
+      background-size: 100%;
+      border-radius: 4px;
+    box-shadow: 50px;
+
+}
+.container_card span    {
+    margin: 1% 0% 5% 0%;
+    font-size: 1.5em;
+    justify-content: center;
+    color: white;
+    box-shadow: 1px;
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+}
+.Card_description   {
+    display: flex;
+    font-size: 0.9em !important;
+    letter-spacing: 2px;
+    justify-content: center;
+
+}
+
+.Card_image {
+    width: 250px;
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+.Container_footer  {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: 'Lora', serif;
+    justify-content: center;
+    align-items: center;
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, 
+    rgba(0, 0, 0, 0.801), rgba(17, 15, 14, 0.801)), url(/public/Fondo_footer.jpg);
+}
+
+@media(max-width:500px) {
+    .Container_inicio   {
+        background: #0f2027; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to bottom, #2c5364, #203a43, #0f2027);
+        background: linear-gradient(
+            to bottom,
+            rgba(44, 83, 100, 0.400),
+            rgba(32, 58, 67, 0.400),
+            rgba(16, 33, 40, 0.400)
+          ),
+          url(/public/Fondo_5.jpg);
+          background-size: 70vh;
+    }
+    .Container_inicio h1    {
+        font-size: 4.8em;
+        margin-left: 0.2em ;
+    margin-top: 0.6em;
+    animation: bounce;
+    animation-duration: 2s;
+    }
+    .Container_inicio h2{
+        width: 10%;
+        justify-content: center;  
+        font-size: 2.6em;
+     padding-left: 40%;
+        margin-top: 1em;
+      text-align: left;
+        margin-left: 0px;
+   
+    }
+    .arrow   {
+        display: flex;
+        justify-content: center;
+        font-size: 1em;
+        margin-top: 3em;
+        color: black;
+        text-decoration: none;
+    }
+    .arrow img  {
+        width: 60px;
+        height: 60px;
+        animation: pulse;
+        animation-duration: 1s;
+           animation-iteration-count: infinite;
+    }
+    .navbar-toggler    {
+        width: 65px;
+        height: 50px;
+       margin-left: 80%;
+       margin-top: 10px;
+      background-color: #7e5b264f;
+      border: 2px solid black;
+    }
+    .offcanvas-body {
+        justify-content: center;
+       width: 100%;
+    }
+    .offcanvas.show {
+        background: #c31432;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, 
+        rgba(15, 17, 19, 0.712), rgba(6, 13, 14, 0.712));
+        display:flex;
+        flex-direction: column;
+    
+    }
+
+    
+    #Container_nav {
+        display:flex;
+        flex-direction: column;
+      justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0.3em ;
+ margin-right: 0em;
+  
+    }
+    .nav_link   {
+        font-size: 1.4em;
+        margin: 0em  0em  1.2em  1.2em;
+        color: white !important;
+        text-decoration: none;
+        font-family:'Times New Roman', Times, serif ;
+        letter-spacing: 1px;
+        animation: fadeInDown;
+    animation-duration: 2s;
+    }
+    .container_card {
+        width: 300px;
+        height: 500px;
+    }
+    .container_card span    {
+        margin: 1% 0% 3% 0%;
+        font-size: 1.4em;
+     
+    }
+    .Card_image {
+        width: 220px;
+        height: 320px;
+        border: 1px solid black;
+        border-radius: 5px;
+        opacity: 0.9;
+    }
+}
